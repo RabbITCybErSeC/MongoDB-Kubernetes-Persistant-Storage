@@ -1,4 +1,4 @@
-# MongoDB-Kubernetes-Persistant-Storage
+# MongoDB-Kubernetes-Persistant-Storage for development
 This repose provides basic MongoDB Kubernetes settings with Persistance Storage for development purposes. I found it hard to find an easy 
 Kubernetes specification to run and test MongoDB with persistant storage. 
 
@@ -23,7 +23,7 @@ Do you want to change the credentials?
 
 ### Set Kubernetes claim storage:
 
-`https://raw.githubusercontent.com/thehoodbuddha/MongoDB-Kubernetes-Persistant-Storage/main/storageclaim.yml`
+`kubectl apply -f https://raw.githubusercontent.com/thehoodbuddha/MongoDB-Kubernetes-Persistant-Storage/main/storageclaim.yml`
 
 ### Run the Mongo service:
 
