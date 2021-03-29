@@ -14,7 +14,7 @@ Do you want to change the credentials?
 
 `echo -n '<your password or username>' | base64` and paste this into the mongodb-secret.yml file (Requires you to clone this repo)
 
-`https://raw.githubusercontent.com/thehoodbuddha/MongoDB-Kubernetes-Persistant-Storage/main/mongodb-secret.yaml`
+`kubectl apply -f https://raw.githubusercontent.com/thehoodbuddha/MongoDB-Kubernetes-Persistant-Storage/main/mongodb-secret.yaml`
 
 
 ### Set Kubernetes persistant storage:
