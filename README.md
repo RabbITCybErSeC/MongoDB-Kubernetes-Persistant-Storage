@@ -1,10 +1,10 @@
 # MongoDB-Kubernetes-Persistant-Storage for development
-This repose provides basic MongoDB Kubernetes settings with Persistance Storage for development purposes. I found it hard to find an easy 
+This repository provides basic MongoDB Kubernetes settings with Persistance Storage for development purposes. I found it hard to find an easy 
 Kubernetes specification to run and test MongoDB with persistant storage. 
 
-Easy to use commands to get your MongoDB running in Kubernetes with persistant storage. 
+Easy to use commands to get your MongoDB running in Kubernetes with persistant storage in matter of seconds.  
 
-## How to add to your minikube?
+## How to add to your minikube or Kubernetes?
  
 
 (Note for specifying your own data path clone the repo and specify your data path in the localstoragevolume.yml file. The current data path might not give you persistance)
