@@ -29,3 +29,13 @@ Do you want to change the credentials?
 
 `kubectl apply -f https://raw.githubusercontent.com/thehoodbuddha/MongoDB-Kubernetes-Persistant-Storage/main/mongoDB.yml`
 
+### Removing your persistant volume might be a big pain:
+
+Use the following commands to remove the volume. (Note data might be lost)
+
+`kubectl describe pvc example-claim | grep Finalizers` should give: `Finalizers:    [kubernetes.io/pvc-protection]`
+
+Fix 
+
+`kubectl patch pvc example-claim  -p '{"metadata":{"finalizers": []}}' --type=merge`   ([Link to StackOverflow](https://stackoverflow.com/questions/51358856/kubernetes-cant-delete-persistentvolumeclaim-pvc/53305538))
+
