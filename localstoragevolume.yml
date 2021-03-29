@@ -13,4 +13,4 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/home/jp/Documents/School/M3/SOA/code repos/kubernetes"
+    path: "mnt/data" #Specify your data path here!!
