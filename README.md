@@ -7,7 +7,7 @@ Easy to use commands to get your MongoDB running in Kubernetes with persistant s
 ## How to add to your minikube?
  
 
-(Note for specifying your own data path clone the repo and specify your data path. The current data path might not give you persistance)
+(Note for specifying your own data path clone the repo and specify your data path in the localstoragevolume.yml file. The current data path might not give you persistance)
 
 ### Set the secrets for MongoDB: `admin`, `admin` (Note this is not Secure, and should not be used in production environments!!). 
 Do you want to change the credentials?
